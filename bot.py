@@ -28,12 +28,12 @@ for x in raw_admins.split(","):
     if x.isdigit():
         ADMIN_IDS.append(int(x))
 
-USERS_FILE = "users.txt"
-GIVEAWAY_FILE = "giveaway.txt"
+USERS_FILE = "/app/users.txt"
+GIVEAWAY_FILE = "/app/giveaway.txt"
 
 QTICKETS_URL = os.getenv(
     "QTICKETS_URL",
-    "https://moscow.qtickets.events/211242-valentines-party-18"
+    "https://t.me/QticketsBuyBot/buy?startapp=211242"
 )
 
 REQUIRED_CHANNEL = os.getenv("REQUIRED_CHANNEL")
